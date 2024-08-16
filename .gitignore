@@ -1,0 +1,5 @@
+# Ignorar la carpeta de config
+/config
+
+# Ignorar lo modulos node
+/node_modules
