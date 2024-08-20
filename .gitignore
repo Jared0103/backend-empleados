@@ -3,3 +3,6 @@
 
 # Ignorar lo modulos node
 /node_modules
+
+# Ignorar .env
+.env
