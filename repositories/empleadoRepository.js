@@ -2,17 +2,23 @@ import empleadoModel from "../models/empleadoModel.js";
 
 const empleadoRepository = {
     getEmpleadoById: async (id) => {
-        await empleadoModel.getEmpleadoById(id)
+        return await empleadoModel.getEmpleadoById(id);
+    },
+    getEmpleadoByCorreo: async (correo) => {
+        return await empleadoModel.getEmpleadoByCorreo(correo);
     },
     createEmpleado: async (empleado) => {
-        await empleado.createEmpleado(empleado)
+        return await empleadoModel.createEmpleado(empleado);
     },
     updateEmpleado: async (id, empleado) => {
-        await empleadoModel.updateEmpleado(id,empleado)
+        return await empleadoModel.updateEmpleado(id, empleado);
     },
     deleteEmpleado: async (id) => {
-        await empleadoModel.deleteEmpleado(id)
+        return await empleadoModel.deleteEmpleado(id);
+    },
+    obtenerEmpleados: async () => {
+        return await empleadoModel.obtenerEmpleado()
     }
-}
+};
 
-export default empleadoRepository
+export default empleadoRepository;

@@ -1,5 +1,5 @@
 class IEmpleado {
-    constructor (nombre, apaterno, amaterno, direccion, telefono, ciudad, estado, correo, noEmpleado, contrasena, perfil) {
+    constructor (nombre, apaterno, amaterno, direccion, telefono, ciudad, estado, correo, noempleado, contrasena, perfil) {
         this.nombre = nombre
         this.apaterno = apaterno
         this.amaterno = amaterno
@@ -8,7 +8,7 @@ class IEmpleado {
         this.ciudad = ciudad
         this.estado = estado
         this.correo = correo
-        this.noEmpleado = noEmpleado
+        this.noempleado = noempleado
         this.contrasena = contrasena
         this.perfil = perfil
     }
